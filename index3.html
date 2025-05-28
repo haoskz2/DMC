@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Devil May Cry: Dante</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #4e0303; /* vermelho médio escuro */
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    header {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav button {
+      background-color: #1f1f1f;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+      transition: all 0.3s ease;
+    }
+
+    nav button:hover {
+      background-color: #440303;
+      box-shadow: 2px 2px 12px #530101aa;
+    }
+
+    main {
+      max-width: 1000px;
+      width: 100%;
+      background-color: #2b2a2a;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    main img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      margin-bottom: 1.5rem;
+    }
+
+    main p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    footer {
+      width: 100%;
+      max-width: 1000px;
+      margin-top: auto;
+      padding: 1rem 0;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      object-fit: cover;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem;
+      }
+
+      nav {
+        gap: 0.5rem;
+      }
+
+      nav button {
+        padding: 0.5rem 1rem;
+      }
+
+      main img {
+        max-width: 100%;
+      }
+
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Devil May Cry: Dante</h1>
+    <nav>
+      <button onclick="window.location.href='inicio.html'">Início</button>
+      <button onclick="window.location.href='personagens.html'">Personagens</button>
+      <button onclick="window.location.href='lore.html'">Lore</button>
+      <button onclick="window.location.href='variacoes.html'">Variações</button>
+    </nav>
+  </header>
+
+  <main>
+    <img src="https://i.pinimg.com/736x/53/09/db/5309db8867ca12413e22d831334cda88.jpg" alt="Imagem de Dante">
+    <p>
+      Dante é um personagem que representa força, atitude e estilo. Sua personalidade marcante e habilidades únicas fazem dele um dos mais icônicos do universo dos games. Sua história é envolvente, cheia de ação e mistério, o que o torna um favorito entre os fãs da franquia Devil May Cry.
+    </p>
+  </main>
+
+  <footer>
+    <div class="gallery">
+      <img src="https://i.pinimg.com/736x/a9/2c/51/a92c514db795ca47512babd91f1a088f.jpg" alt="Imagem 1">
+      <img src="https://i.pinimg.com/736x/d7/27/40/d72740864871003770e849179895cdf8.jpg" alt="Imagem 2">
+      <img src="https://i.pinimg.com/736x/18/65/83/18658331d97ee45cdd02560c9754d456.jpg" alt="Imagem 3">
+      <img src="https://i.pinimg.com/736x/f1/30/2b/f1302bf9435dba68486cb0c6dddfa66e.jpg" alt="Imagem 4">
+    </div>
+  </footer>
+
+</body>
+</html>
